@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/main/main",
+    "pages/person/person",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/public/public",
+    "pages/scenic/scenic",
+    "pages/scenic/order",
+    "pages/scenic/chushibiao",
+    "pages/scenic/detail",
+    "pages/scenic/ordertips",
+    "pages/scenic/tuijian",
+    "pages/scenic/location",
+    "pages/scenic/orderform",
+    "pages/scenic/price",
+    "pages/routeForeign/routeForeign",
+    "pages/routeInland/routeInland",
+    "pages/seckillList/seckillList",
+    "pages/around/around",
+    "pages/hotel/hotel",
+    "pages/parentChild/parentChild",
+    "pages/selfdriving/selfdriving",
+    "pages/result/focus1",
+    "pages/result/focus2"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39c3d0",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "骏途旅游门票线路酒店",
+    "backgroundColor": "#39c3d0 ",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/main/main",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "周末玩"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "联系骏途"
+      },
+      {
+        "pagePath": "pages/person/person",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
+}

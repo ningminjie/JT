@@ -1,0 +1,5 @@
+<view class="page">
+<block wx:for="{{imglist}}">
+ <image class="image" src="{{item.imageSrc}}"></image>
+ </block>
+</view>

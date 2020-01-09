@@ -1,0 +1,77 @@
+<!--main.wxml-->
+<view class="page">
+    <view class="nav-tabs">
+            <block wx:for="{{tabs}}">
+                    <view id="{{item.id}}" bindtap="tab" class="tab {{item.active?'active':''}}" >
+                        <text>{{item.name}}</text>
+                        <view class="underline"></view>
+                    </view>
+            </block>
+    </view>
+    <swiper class=" "  current="{{current}}" duration="{{duration}}" style="height:500px;">
+        <swiper-item>
+            <scroll-view scroll-y style="height:100%;">
+             <view class="ui-list">
+               <view class="body">
+                <view class="ui-list">
+                    <block wx:for-items="{{list1}}">
+                        <navigator id="{{item.id}}" url="{{item.url}}" class="item">
+                            <view class="cell">
+                                <view class="cell-hd">
+                                    <image class="picture" src="{{item.img}}" mode="aspectFill" />
+                                </view>
+                                <view class="cell-bd">
+                                    <text class="name">{{item.title}}</text>
+                                    <view class="remark">
+                                        <view class="page-section"  style="padding:0px 0px;display:flex;flex-direction:row;justify-content:space-between;" >  
+                                            <view class="flex-item " style="width:75%;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;font-size: 25rpx;">
+                                            {{item.title}}
+                                            </view>    
+                                            <view class="flex-item" style="width:35%;text-align:center;font-size:18px;color:#ff8500;">{{item.price}}</view>
+                                        </view>
+                                        <text class="extra">其他信息</text>
+                                    </view>
+                                </view>
+                            </view>
+                        <view class="line-t {{index == 0 ? 'first' : ''}}"></view>
+                    </navigator>
+                  </block>
+                </view>
+               </view>
+              </view>
+	        </scroll-view>
+        </swiper-item>
+        <swiper-item>
+         <scroll-view scroll-y style="height:100%;">
+             <view class="ui-list">
+               <view class="body">
+                <view class="ui-list">
+                    <block wx:for-items="{{list2}}">
+                        <navigator id="{{item.id}}" url="{{item.url}}" class="item">
+                            <view class="cell">
+                                <view class="cell-hd">
+                                    <image class="picture" src="{{item.img}}" mode="aspectFill" />
+                                </view>
+                                <view class="cell-bd">
+                                    <text class="name">{{item.title}}</text>
+                                    <view class="remark">
+                                        <view class="page-section"  style="padding:0px 0px;display:flex;flex-direction:row;justify-content:space-between;" >  
+                                            <view class="flex-item " style="width:75%;overflow: hidden; text-overflow: ellipsis; white-space: nowrap;font-size: 25rpx;">
+                                            {{item.title}}
+                                            </view>    
+                                            <view class="flex-item" style="width:35%;text-align:center;font-size:18px;color:#ff8500;">{{item.price}}</view>
+                                        </view>
+                                        <text class="extra">其他信息</text>
+                                    </view>
+                                </view>
+                            </view>
+                        <view class="line-t {{index == 0 ? 'first' : ''}}"></view>
+                    </navigator>
+                </block>
+              </view>
+            </view>
+          </view>
+	     </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>

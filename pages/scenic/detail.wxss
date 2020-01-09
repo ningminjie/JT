@@ -1,0 +1,4 @@
+.page{background: #fff;}
+.image{
+    height: 310px;
+}

@@ -1,0 +1,13 @@
+/* pages/login/login.wxss */
+.inputs{
+border
+:
+1px solid #eee
+;
+ padding: 5px 10px;
+}
+.section__title{
+    line-height: 35px;
+    margin-bottom: 10px;
+   
+}

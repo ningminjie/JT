@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<view style="text-align:center;color:red;">login.wxml</view>
+<form  >
+  
+
+  <view class="section">
+    <view class="section__title">user:
+    <input name="input" placeholder="please user here"  class="inputs" bindinput="userbind"/>
+    <view style="color:blue;"> {{userval}}</view>   
+    </view>
+  </view>
+  <view class="section">
+    <view class="section__title">psw:
+    <input name="input" placeholder="please psw here" class="inputs" bindinput="pswbind"/>
+    <view style="color:blue;"> {{pswval}}</view>   
+    </view>
+  </view>
+  
+  
+  <view class="btn-area">
+    <button bindtap="loginbind">Submit</button>
+  </view>
+</form>

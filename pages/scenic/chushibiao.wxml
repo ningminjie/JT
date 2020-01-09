@@ -1,0 +1,57 @@
+<view class="page">
+<view class="imgbox">
+<image src="{{imagesrc}}"> </image>
+</view>
+<view class="section">
+<view class="section-titleimg">
+<image src="{{imagesrc1}}"> </image>
+</view>
+
+<view class="section-content">
+<navigator class="section-content-nav" url="/pages/scenic/order"  bindtap="Modal">
+      <view class="contimg">
+      <image src="{{imagesrc2}}"> </image>
+      </view>
+    <view class="jm-special-items">
+      <view class="jm-special-item-title">
+      {{itemtitle}}《出师表》演出 
+      </view>
+      <view class="jm-special-item-info">
+      {{iteminfos}}
+      <p> ★沉浸式观赏体验。</p>
+      <p> ★中国首座可以开合的旅游演出剧场。</p>
+      <p> ★神曲致敬诸葛大神巨型的木牛流马。</p>
+      <p> ★风、火、雨的实景体验。</p>
+      <p> ★精美服饰重新演绎历史人物。</p>
+      </view>
+    </view>
+    <view class="jm-special-item-bottom">
+    <view class="jm-special-item-price-no">
+      <view class="xz-price">
+      <span class=" ">骏途价：￥</span>
+      <span class="font-lg">160</span>
+      </view>
+      <view class="sc-price">
+      <span class=" "> 市场价：</span>
+      <span class="line-through">￥198</span>
+      </view>
+       <view class="jm-special-btn-price p-right"> 去看看 </view>
+    </view>
+    </view>
+</navigator>
+</view>
+
+
+<view class="miaoshuimg">
+    <image src="{{imagesrc3}}"> </image>
+</view>
+
+
+<view class="jm-bottomimg">
+    <image src="{{imagesrc4}}"> </image>
+</view>
+</view>
+</view>
+
+
+

@@ -1,0 +1,8 @@
+<view>
+    <input placeholder="a" bindinput="getA"></input>
+    <label>+</label>
+    <input placeholder="b" bindinput="getB"></input>
+    <text>=</text>
+    <text>{{result}}</text>
+    <button type="primary" bindtap="plus">运算</button>
+</view>

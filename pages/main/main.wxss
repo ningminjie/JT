@@ -1,0 +1,31 @@
+/**main.wxss**/
+.page{width:100%;height:100%;}
+.nav-tabs .tab{
+    display: inline-block;
+    margin: 0 auto;
+    font-size: 30rpx;
+    padding: 30rpx 0;
+    color: #888888;
+    position: relative;
+    width:50%;
+    text-align: center;
+}
+.nav-tabs .tab .underline{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 6rpx;
+    background-color: transparent;
+}
+.nav-tabs .tab.active{
+    color: #09bb07;
+}
+.nav-tabs .tab.active .underline{
+    background-color: #09bb07;
+}
+.tab-content{
+    overflow: auto;
+}
+

@@ -1,0 +1,16 @@
+
+.jm-detail-page-info {
+    font-size: 14px;
+    line-height: 25px;
+    background: #fff;
+    padding: 5px;
+    
+}
+.pagetitle{
+        font-weight: bold;
+}
+.pagecont{
+    color: #353535;
+    font-size: 12px;
+}
+.pagecont p{display: block;}

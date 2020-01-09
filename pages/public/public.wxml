@@ -1,0 +1,7 @@
+<!--pages/public/public.wxml-->
+
+<template name="header">
+  <view class="page-header">
+    <text class="page-header-text">{{title}}</text>
+  </view>
+</template>

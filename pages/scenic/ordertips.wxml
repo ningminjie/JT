@@ -1,0 +1,27 @@
+<!--<view class="jm-detail-page-info">
+
+<b>特殊人群政策：</b>
+<br>
+<p>1、身高1.5米以上（含1.5米）的游客须购买全价票入园；1.2米-1.4米（含1.4米）的儿童可购买儿童票入园。
+门市挂牌价格如有调整，以公园公告、公示为准。
+<br> 2、身高1.2米以下（不含1.2米）的儿童和65岁以上的老人免票，但须有持全价票的成人陪同方可入园，
+入园时须主动接受公园身高牌测量或出示老年证、身份证。一名持全价票的游客仅限带一名符合要求的免票人士入园。
+<br> 3、受物价部门许可，导游证（非带团导游）、军官证、记者证、士官证、残疾人证均不能作为本公园免票凭证。
+<br> 以上信息以景区当天披露为准。
+</p>-->
+
+<!--<view class="jm-detail-page-info">
+<block wx:for="{{pagelists}}">
+<view class="pagetitle">{{item.pagetitle}}</view>
+<block wx:for="{{item.plist}}" wx:for-item="plist">
+<view class="pagecont">{{plist.pagecont}}</view>
+</block>
+</block>
+</view>-->
+<view class="jm-detail-page-info">
+<block wx:for="{{pagelists}}">
+<view class="pagetitle">{{item.pagetitle}}</view>
+<view class="pagecont">{{item.pagecont}}</view>
+
+</block>
+</view>

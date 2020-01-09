@@ -1,0 +1,13 @@
+<view bindtap="tap1" style="color:green;margin-top:10px;">
+  显示消息提示框
+</view>
+<view bindtap="tap2"  style="color:red;margin-top:10px;">
+  隐藏消息提示框
+</view>
+<view bindtap="tap3"  style="color:yellow;margin-top:10px;">
+  ​显示模态弹窗
+</view>
+<view bindtap="tap4"  style="color:pink;margin-top:10px;">
+ ​显示操作菜单
+</view>
+

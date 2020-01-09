@@ -1,0 +1,99 @@
+<!--index.wxml-->
+
+<view class="page">
+    <view class="page-section pb10" >
+        <view class="">
+                <swiper style="height:178px!important;" indicator-dots="{{indicatorDots}}"
+                autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+                    <block wx:for="{{swiperData}}">
+                        <swiper-item class="swiper-item">
+                            <navigator url="{{item.url}}">
+                                <image src="{{item.img}}"/>
+                            </navigator>
+                        </swiper-item>
+                    </block>
+                </swiper>
+        </view>
+         <view class=" icon-tap">
+                  <block wx:for-items="{{navlist}}">
+                        <navigator class="nav-box" url="{{item.url}}">
+                            <view class="nav-item">
+                                <image src="{{item.icon}}"></image>
+                                <text>{{item.text}}</text>
+                            </view>
+                        </navigator>
+                  </block>
+        </view>
+    </view>
+    <view class="page-section" >
+         <view class="recommend_navs ">
+                  <block wx:for-items="{{recommend_navs}}">
+                        <navigator class="rec-box" url="{{item.url}}">
+                            <view class="rec-item">
+                                <image src="{{item.icon}}"></image>
+                            </view>
+                        </navigator>
+                  </block>
+        </view>
+    </view>
+    <view class="page-section ">
+        <view class="nav-tabs">
+            <block wx:for="{{tabs}}">
+                    <view id="{{item.id}}" bindtap="tab" class="tab {{item.active?'active':''}}" >
+                        <text>{{item.navTab}}</text>
+                        <view class="underline"></view>
+                    </view>
+            </block>
+        </view>
+        <swiper class=" "  current="{{current}}" duration="{{duration}}"  style="height:534px;">
+                <swiper-item>
+                    <scroll-view scroll-y style="height:100%;"  bindscroll="scroll">
+                             <block wx:for-items="{{list1}}">
+                                    <navigator class="hot-box" url="{{item.url}}">
+                                        <view class="hot-item">
+                                            <view class="hot-item-icon">
+                                            <image src="{{item.icon}}"></image>
+                                            <view class="hot-item-icon-font ">
+                                                    <text class="Font1">{{item.iconFont1}}</text>
+                                                    <text class="Font2">{{item.iconFont2}}</text>
+                                            </view>                                  
+                                            </view>
+                                            <view class="hot-item-img"> 
+                                            <image src="{{item.img}}"  mode="{{item.mode}}"></image>
+                                            <text class="hot-item-mask">{{item.text}}</text>
+                                            </view> 
+                                        </view>
+                                        <viem class="hot-item-title">{{item.title}}</viem>
+                                        <viem class="hot-item-price">{{item.price}}<em>起</em></viem>
+                                    </navigator>
+                            </block>
+                    </scroll-view>
+                </swiper-item>
+                <swiper-item>
+                    <scroll-view scroll-y style="height:100%;" bindscroll="scroll">
+                                <block wx:for-items="{{list2}}">
+                                   <navigator class="hot-box" url="{{item.url}}" >
+                                        <view class="hot-item">
+                                            <view class="hot-item-icon">
+                                            <image src="{{item.icon}}"></image>
+                                            <view class="hot-item-icon-font ">
+                                                    <text class="Font1">{{item.iconFont1}}</text>
+                                                    <text class="Font2">{{item.iconFont2}}</text>
+                                            </view>                                  
+                                            </view>
+                                            <view class="hot-item-img"> 
+                                            <image src="{{item.img}}"  mode="{{item.mode}}"></image>
+                                            <text class="hot-item-mask">{{item.text}}</text>
+                                            </view> 
+                                        </view>
+                                        <viem class="hot-item-title">{{item.title}}</viem>
+                                        <viem class="hot-item-price">{{item.price}}<em>起</em></viem>
+                                    </navigator>
+                                  
+                                </block>
+                    </scroll-view>
+                </swiper-item>
+        </swiper>
+    </view>
+   
+</view>

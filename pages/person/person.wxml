@@ -1,0 +1,9 @@
+
+<import src="../public/public.wxml" />
+<view class="page-box"> 
+  <template is="header" data="{{title: 'Login'}}"/>
+<view>{{username}}</view>
+  
+</view>
+  
+

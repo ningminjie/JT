@@ -1,0 +1,80 @@
+<view class="page">
+
+<view class="jm-detail-banner">
+<navigator url="navigate?title=navigate" >
+    <view class="headImg" style="height:200px;"> 
+    <image class="image" src="{{imageSrc}}"></image>
+    </view>
+    <view class="jm-detail-banner-title">
+    {{bannertitle}}
+    </view>
+    <view class="jm-detail-banner-num">
+    {{bannernum}}张
+    </view>
+ </navigator> 
+</view>
+
+<navigator url="/pages/scenic/location" hover-class="navigator-hover" class="jm-detail-nav location">
+    <view class="jm-detail-location" > {{detaillocation}}  </view>
+    <!--<image class="jm-nav-right" src="/image/arrowright.png"  />-->
+</navigator>
+
+<view class=" section">
+ <block wx:for-items="{{list}}">
+    <view class="widgets-item">
+        <view id="{{item.id}}" class="widgets-info {{item.open ? 'active' : ''}}" bindtap="widgetsToggle">
+            <text class="widgets-info-name">{{item.title}}</text>
+            <!--<image class="widgets-info-img" src="/image/arrowright.png" mode="aspectFill" />-->
+        </view>
+        <view class="ui-list {{item.open ? 'display-show' : 'display-none'}}">
+            <block wx:for-items="{{item.listpages}}" wx:for-item="page">                
+                        <view class=" listpage ">
+                            <view class="jm-detail-ticket-item-title">{{page.text}}</view>
+                            <view class="jm-detail-ticket-info">
+                                <view class="jm-detail-ticket-tips">{{page.tips}}</view>
+                                <view class="jm-detail-ticket-all-item-coupon " >
+                                    <span class="jm-coupon-flag">优惠券</span>
+                                </view>
+                                <navigator url="/pages/scenic/price"><span class="jm-detail-buy-tips" >购买须知</span></navigator>
+                                <view class="jm-detail-ticket-price-wapper">
+                                <view class="jm-detail-ticket-price-jt">{{page.pricejt}} </view>
+                                <view class="jm-detail-ticket-price-mt">{{page.pricemt}}</view>
+                                <navigator url="/pages/scenic/orderform">
+                                <view class="jm-detail-ticket-price-btn active"   >
+                                    <span class="jm-detail-ticket-price-btn-text">订购</span>
+                                    <span class="jm-detail-ticket-price-btn-info">在线支付</span>
+                                </view>
+                                </navigator>
+                            </view>
+                            </view>
+                        </view>              
+            </block>
+        </view>
+    </view>
+ </block>
+</view>
+ 
+<view class=" section">
+ <view class="jm-detail-special-info">景区特色</view>
+ <view class="jm-detail-special-info-text">
+ <view>★中国目前拥有过山车数量最多的主题乐园；</view>
+ <view>★中国西部的“迪士尼”乐华欢乐世界；</view>
+ <view>★乐享青春、华丽挑战。</view>
+ </view>
+</view>
+
+<view class=" section">
+    <navigator url="/pages/scenic/detail" hover-class="navigator-hover" class="jm-detail-nav detail-info">
+        <view class="jm-detail-detail-info" > 景区详情  </view>
+    </navigator>
+    <navigator url="/pages/scenic/ordertips" hover-class="navigator-hover"  class="jm-detail-nav order-tips-info">
+        <view class="jm-detail-order-tips-info" >预订须知  </view>
+    </navigator>
+</view>
+
+<view class=" section">
+    <navigator url="/pages/scenic/tuijian" hover-class="navigator-hover" class=" arrowlink">
+        <view class=" jm-arrowlink" >    附近热卖推荐 </view>
+    </navigator>
+</view>
+</view>

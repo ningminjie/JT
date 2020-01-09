@@ -1,0 +1,319 @@
+page{
+  background: #f6f6f6;  
+}
+/*.page{background: #f6f6f6;}*/
+.jm-detail-banner{
+    position: relative;
+}
+.jm-detail-banner-title{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    background: rgba(0,0,0,.2);
+    width: 100%;
+}
+.jm-detail-banner-num{
+    position:absolute;
+    bottom:40px;
+    right:0;
+    background: #f90;
+    color: #fff;
+    box-sizing: border-box;
+    height: 30px;
+    padding-right: 3px;
+    line-height: 30px;
+    font-size: 14px;
+
+}
+
+.jm-detail-banner-num::after {
+    position: absolute;
+    background: url(http://static.juntu.com/mv2.0/images/qz-icon_88af6ea.png) -159px -71px no-repeat;
+    left: -11px;
+    bottom: 0;
+    -webkit-background-size: 170px;
+    background-size: 170px;
+    height: 30px;
+    width: 12px;
+    content: "";
+}
+/*jingqutese*/
+.jm-detail-special-info{
+    border-top: #e0e0e0 1px solid!important;
+    border-bottom: #e0e0e0 1px solid!important;
+    background-color: #fff;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px!important;
+    padding-right: 25px!important;
+    font-size: 16px;
+    position:relative;
+}
+.jm-detail-special-info::before {
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    background: url(http://static.juntu.com/mv2.0/images/qz-icon_88af6ea.png) -75px -71px no-repeat;
+       content: "";
+    -webkit-background-size: 170px;
+    background-size: 170px;
+    left: 15px;
+    top: 50%;
+    margin-top: -8px;
+}
+.jm-detail-special-info-text{
+    position: relative;
+    padding:10px 15px;
+    font-size: 12px;
+    color: #757575;
+    -webkit-box-align: center;
+    border-bottom: #e0e0e0 1px solid!important;
+    background:#fff;
+}
+
+/*---------------------------------------------------------------------------------------------*/
+
+.widgets-info-name{
+    font-size: 16px;
+}
+.widgets-info{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px!important;
+    padding-right: 25px!important;
+    border-top: #e0e0e0 1px solid!important;
+    border-bottom: #e0e0e0 1px solid!important;
+    background-color: #fff;
+    position:relative;
+}
+.widgets-info::before{
+   position: absolute;
+    width: 20px;
+    height: 18px;
+    background: url(http://static.juntu.com/mv2.0/images/qz-icon_88af6ea.png) -51px -70px no-repeat;
+    content: "";
+    -webkit-background-size: 170px;
+    background-size: 170px;
+    left: 15px;
+    top: 50%;
+    margin-top: -8px;
+}
+.widgets-info::after{
+     font-family: iconfont!important;
+    font-size: 22px;
+    line-height: 44px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    color: rgba(0,0,0,.5);
+    color: #c7c7c7;
+    content: "\e6de";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -22px;
+    margin-right: -10px;
+}
+.widgets-info.active::after {
+    content: "\e661";
+}
+.display-none{
+    display: none;
+}
+.display-show{
+    display: block;
+}
+.ui-list .listpage{
+    border-bottom:1px solid #e0e0e0;
+    padding: 13px 15px;
+}
+
+.ui-list .item .name{
+    font-size: 34rpx;
+    line-height: 1.2rem;
+}
+/*---------------------------------------*/
+
+
+.section{
+    margin-top: 10px;
+}
+/*------------liebiaoyangshi-------------------*/
+.jm-detail-ticket-item-title{
+    padding: 5px 0;
+    font-size: 14px;
+}
+.jm-detail-ticket-info{
+    position: relative;
+    padding-right: 150px;
+    min-height: 60px;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    padding-left:10px;
+}
+.jm-detail-ticket-tips {
+    color: #f90;
+    font-size: 12px;
+}
+.jm-coupon-flag {
+    font-size: 10px;
+    background-color: #00a5e0;
+    padding: 0 3px;
+    color: #fff;
+    margin-right: 3px;
+    border-radius: 2px;
+}
+.jm-detail-buy-tips {
+    text-decoration: underline;
+    color: #757575;
+    font-size: 12px;
+}
+.jm-detail-ticket-price-wapper {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 150px;
+    padding-right: 80px;
+    box-sizing: border-box;
+    margin-top: -28px;
+}
+.jm-detail-ticket-price-jt {
+    font-size: 24px;
+    color: #f60;
+    text-align: right;
+    line-height: 1;
+}
+.jm-detail-ticket-price-mt {
+    font-size: 14px;
+    color: #757575;
+    padding: 0 5px;
+    text-decoration: line-through;
+    text-align: right;
+}
+.jm-detail-ticket-price-btn {
+    width: 70px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+.jm-detail-ticket-price-btn-text {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #f90;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    line-height: 1;
+}
+.jm-detail-ticket-price-btn-info {
+    border: 1px solid #b2b2b2;
+    display: block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 3px 0;
+    background-color: #fff;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+        color: #f90;
+    border-color: #f90;
+}
+/*------------liebiaoyangshi-------------------*/
+
+
+/*---------------------------------------------------------------------------------------------*/
+.jm-detail-nav{
+    padding-left: 40px!important;
+    padding-right: 25px!important;
+    border-top: #e0e0e0 1px solid!important;
+    border-bottom: #e0e0e0 1px solid!important;
+    background-color: #fff;
+    position:relative;
+}
+.jm-detail-nav::before {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -20px;
+    line-height: 40px;
+    font-family: iconfont!important;
+    color: #c8c7cc;
+    font-size: 20px;
+}
+.jm-detail-nav::after {
+    font-family: iconfont!important;
+    font-size: 22px;
+    line-height: 44px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    color: rgba(0,0,0,.5);
+    color: #c7c7c7;
+    content: "\e6a3";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -22px;
+    margin-right: -10px;
+}
+.location::before{
+ content: "\e651";
+}
+.order-tips-info::before{
+content: "\e691";
+}
+.order-tips-info{border-top: none!important;}
+.jm-detail-location{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.jm-arrowlink,.jm-detail-detail-info,.jm-detail-order-tips-info{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.detail-info::before {
+    position: absolute;
+    width: 20px;
+    height: 18px;
+    background: url(http://static.juntu.com/mv2.0/images/qz-icon_88af6ea.png) -103px -70px no-repeat;
+     content: "";
+    -webkit-background-size: 170px;
+    background-size: 170px;
+    left: 15px;
+    top: 50%;
+    margin-top: -8px;
+}
+.arrowlink{
+    border-top: #e0e0e0 1px solid!important;
+    border-bottom: #e0e0e0 1px solid!important;
+    background-color: #fff;
+    padding-left: 15px!important;
+    padding-right: 25px!important;
+    position:relative;
+}
+.arrowlink::after{
+    font-family: iconfont!important;
+    font-size: 22px;
+    line-height: 44px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    display: block;
+    color: rgba(0,0,0,.5);
+    color: #c7c7c7;
+    content: "\e6a3";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -22px;
+    margin-right: -10px;
+}

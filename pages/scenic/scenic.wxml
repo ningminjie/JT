@@ -1,0 +1,50 @@
+<view class="page">
+    <view class="page-section">
+      <view class="searchBar">
+        <input class="searchInput" placeholder="请输入目的地，国家或城市" focus="{{focus}}" />
+      </view>
+      <view class="imagebox" style="height:150px;" bindtap="jumpToNavigateTo">
+      <image class="image" src="{{imageSrc}}"></image>
+      </view>
+      <view class="ui-list-navigator">
+            <block wx:for-items="{{menulist1}}" >                
+                    <view id="{{item.id}}" bindtap="tab" class="content {{item.active?'active':'curr'}}">  
+                    <navigator url="{{item.url}}" >                                               
+                            <text class="name">{{item.title}}</text>
+                        <view class="line-b "></view>
+                        <view class="line-r  {{index%3==2?'none':''}}"></view>
+                    </navigator>
+                    </view>                
+            </block>
+            <view class="line-t"></view>
+      </view>
+      <view class="sceniclists">  
+            <block wx:for-items="{{all}}">                    
+                    <view class="all-item">
+                    <navigator  url="{{item.url}}">
+                        <view class="all-lfimg  "> 
+                        <image src="{{item.img}}"  mode="{{item.mode}}"></image>
+                        </view>
+                        <view class="all-rtfont ">
+                        <view class="all-bigtitle">{{item.bigtitle}}</view>
+                        <view class="all-lowtitle">{{item.lowtitle}}</view>
+                        <view class="all-icon-font ">
+                                <viem class="all-item-quan" data-isquan="{{item.isquan}}">
+                                    <span class="jm-cut-flag">立减</span><span class="jm-coupon-flag ">优惠劵</span>
+                                </viem>
+                                <viem class="all-item-price"><span class="jm-oldprice">{{item.oldprice}}</span> <span class="jm-price">{{item.price}}<i>起</i></span></viem>                  
+                            </view>
+                        </view>
+                    </navigator>
+                    </view>                    
+            </block>
+        </view>
+
+
+
+
+
+
+
+    </view>
+</view>

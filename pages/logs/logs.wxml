@@ -1,0 +1,71 @@
+<view class=" page">
+            <view class="title title-red">九宫格</view>
+            <view class="ui-list-navigator">
+                <block wx:for-items="{{menulist1}}" >
+                    <navigator url="{{item.url}}" >
+                        <view id="{{item.id}}" bindtap="tab" class="content {{item.active?'active':''}}">                                                 
+                                <text class="name">{{item.title}}</text>
+                            <view class="line-b "></view>
+                            <view class="line-r  {{index%3==2?'none':''}}"></view>
+                        </view>
+                    </navigator>
+                </block>
+                <view class="line-t"></view>
+            </view>
+            <!--<view class="title title-red">九宫格2</view>
+            <view class="ui-list-navigator"  style="width:80%;margin:auto;">
+                <block wx:for-items="{{menulist1}}" >
+                    <navigator url="{{item.url}}" class="navigator {{item.active?'active':''}}" id="{{item.id}}" bindtap="tab">
+                        <view  class="content2 ">                                                 
+                            <text class="name">{{item.title}}</text>
+                            <view class="line-b "></view>
+                            <view class="line-r  {{index%3==2?'none':''}}"></view>
+                        </view>
+                    </navigator>
+                </block>
+                <view class="line-t"></view>
+            </view>-->
+            <!--<template name="msgItem">-->
+        <view class="sceniclists">
+                    <block wx:for-items="{{all}}">
+                            <navigator  url="{{item.url}}">
+                            <view class="all-item">
+                                <view class="all-lfimg  "> 
+                                <image src="{{item.img}}"  mode="{{item.mode}}"></image>
+                                </view>
+                                <view class="all-rtfont ">
+                                <view class="all-bigtitle">{{item.bigtitle}}</view>
+                                <view class="all-lowtitle">{{item.lowtitle}}</view>
+                                <view class="all-icon-font ">
+                                        <viem class="all-item-quan" data-isquan="{{item.isquan}}">
+                                          <span class="jm-cut-flag">立减</span><span class="jm-coupon-flag ">优惠劵</span>
+                                        </viem>
+                                        <viem class="all-item-price"><span class="jm-oldprice">{{item.oldprice}}</span> <span class="jm-price">{{item.price}}<i>起</i></span></viem>                  
+                                    </view>
+                                </view>
+                                  </view>
+                            </navigator>
+                    </block>
+        </view>
+        <!--</template>-->
+
+<!--<template is="msgItem" data="...all" />-->
+   <view class="section section_gap">
+            <view class="section__title">horizontal scroll</view>
+            <scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%" scroll-into-view="{{toView}} " scroll-left="{{scrollLeft}}" scroll-right="{{scrollRight}}">
+                <view id="one" class="scroll-view-item_H bc_green"></view>
+                <view id="two"  class="scroll-view-item_H bc_red"></view>
+                <view id="three" class="scroll-view-item_H bc_yellow"></view>
+                <view id="four" class="scroll-view-item_H bc_blue"></view>
+            </scroll-view>
+
+            <view class="btn-area">
+                <button size="mini" bindtap="lttap">click me to scroll into left </button>
+            </view>
+             <view class="btn-area">
+                <button size="mini" bindtap="rttap">click me to scroll into right </button>
+            </view>
+    </view>
+
+       
+</view>

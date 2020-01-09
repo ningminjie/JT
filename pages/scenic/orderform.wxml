@@ -1,0 +1,75 @@
+<view class="page ">
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="ordertitle ">{{ordertitle}}</view>
+ <view class="section">
+  <navigator url="/pages/scenic/detail" hover-class="navigator-hover" class="jm-detail-nav ">
+   <view class="section-row" >
+    <span class="section-title">使用日期</span>
+    <view class="section-cont" > 
+    <input class=" " name="travelDate" placeholder="选择使用日期" type="date" />
+    <i></i>
+    </view>
+   </view>
+  </navigator>
+  <view class="jm-section " >
+   <span class="jm-li-title">购买张数</span>
+    <view class="jm-type-group">
+      <view class="jm-calc-wapper ">
+      <span class="jm-calc-minus"></span>
+      <input class="spinnerIdcard " name="quantity" placeholder="1" type="text" value="1"/>
+      <span class="jm-calc-add "></span>
+      </view>
+    </view>
+   </view>
+</view>
+<view class="section"> 
+ <view class="section-row" >
+   <span class="section-title">取票码</span>
+   <view class="section-cont">
+   <input class=" " name="contact_name" placeholder="请填写取票人" type="text"/>
+   <i></i>
+   </view>
+ </view> 
+ <view class="section-row" >
+   <span class="section-title">手机号码</span>
+  <view class="section-cont" >   
+    <input class="  "name="contactMobile" placeholder="手机号码（接收兑票串码）" type="number"  value=""/>
+    <i></i>
+  </view>
+  </view>
+</view>
+<view class="ordertitle">优惠活动</view>
+<view class="section" style="margin:0!important;">
+  <navigator url="/pages/scenic/detail" hover-class="navigator-hover" class="jm-detail-nav ">
+   <view class="section-row" >
+    <span class="section-title">优惠劵</span>
+    <view class="section-cont"  style="color:#f60;"> 
+    请登陆
+    </view>
+   </view>
+  </navigator>
+</view>
+<view class="ordertitle">您需要填写身份证信息</view>
+<view class="section" style="margin:0!important;"> 
+ <view class="section-row" >
+   <span class="section-title">旅客1</span>
+   <view class="section-cont">
+   <input class=" " name="contact_user" placeholder="旅客1（真实姓名）" type="text"/>
+   <i></i>
+   </view>
+ </view> 
+ <view class="section-row" >
+   <span class="section-title">手机号码</span>
+  <view class="section-cont" >   
+    <input class="  "name="contactcard" placeholder="身份证（凭有效证件入园）" type="idcard"  value=""/>
+    <i></i>
+  </view>
+  </view>
+</view> 
+ <view class="btn-area">
+     <view class="btn-price">订单金额：<span class=" btn-price-font">{{prices}}</span></view>
+     <view class="btn-submit"><button formType="submit"  class="btn-submitsize ">下一步</button></view>
+    <!--<button formType="reset">Reset</button>-->
+  </view>
+</form>
+</view>

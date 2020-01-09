@@ -1,0 +1,27 @@
+  
+  
+   <view class="sceniclists">  
+            <block wx:for-items="{{all}}">                    
+                    <view class="all-item">
+                    <navigator  url="{{item.url}}">
+                        <view class="all-lfimg  "> 
+                        <image src="{{item.img}}"  mode="{{item.mode}}"></image>
+                        </view>
+                        <view class="all-rtfont ">
+                        <view class="all-bigtitle">{{item.bigtitle}}</view>
+                        <view class="all-lowtitle">{{item.lowtitle}}</view>
+                        <view class="all-icon-font ">
+                                <viem class="all-item-quan" data-isquan="{{item.isquan}}">
+                                    <span class="jm-cut-flag">立减</span><span class="jm-coupon-flag ">优惠劵</span>
+                                </viem>
+                                <viem class="all-item-price"><span class="jm-oldprice">{{item.oldprice}}</span> <span class="jm-price">{{item.price}}<i>起</i></span></viem>                  
+                            </view>
+                        </view>
+                    </navigator>
+                    </view>                    
+            </block>
+        </view>
+
+        <view>
+        {{title}}
+        </view>
